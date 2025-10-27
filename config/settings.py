@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -148,8 +148,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 cloudinary.config(
     cloud_name="dzkfswtru",
-    api_key="292984143432322",
-    api_secret="**********************",
+    api_key="556332618782382",
+    api_secret="ymob6eMf3wdXMKqAQLRs2EAsjmM",
     secure=True
 )
 
