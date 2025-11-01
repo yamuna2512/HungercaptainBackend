@@ -13,3 +13,11 @@ class ItemList(generics.ListAPIView):
     filterset_fields = ['category']
     search_fields = ['name']
 
+def get_queryset(self):
+        queryset = Item.objects.filter(status='active').order_by('-created_at')
+        category = self.request.query_params.get('category')
+
+        # ✅ If category is not "all" and not empty, filter it
+        if category and category != 'all':
+            queryset = queryset.filter(category__iexact=category)
+        return queryset
