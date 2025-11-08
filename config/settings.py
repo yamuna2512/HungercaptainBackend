@@ -48,8 +48,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 X_FRAME_OPTIONS = '*'
 CORS_ORIGIN_ALLOW_ALL = True
-# CSRF_TRUSTED_ORIGINS = ['https://hungercaptainbackend-2.onrender.com',
-#     'http://localhost:3000',]
+CSRF_TRUSTED_ORIGINS = ['https://hungercaptainbackend-3.onrender.com']
 
 # Application definition
 
